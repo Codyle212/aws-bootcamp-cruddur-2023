@@ -1,4 +1,8 @@
 # Week 0 — Billing and Architecture
+## Setting an Organization for Enterpise
+1. Create an Active OU and put all Bussiness Unit under that OU, All account should be in use
+2. Create a Standby OU for empty AWS account, so we don't need to set up
+3. Create a Recycling OU for Account pending clearing when someone leaves or transfers, then move the cleaned accounts to Standby OU
 ## Create a AWS Budget
 ```
 aws budgets create-budget \

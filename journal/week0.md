@@ -17,3 +17,7 @@ aws sns subscribe \
     --protocol email \
     --notification-endpoint $email_here
 ```
+## Creating Alarm to Trigger SNS topic
+```
+aws cloudwatch put-metric-alarm --cli-input-json file://alarm-config.json
+```

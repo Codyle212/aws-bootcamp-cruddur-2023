@@ -25,3 +25,9 @@ aws sns subscribe \
 ```
 aws cloudwatch put-metric-alarm --cli-input-json file://alarm-config.json
 ```
+## Removeing Sensitive Data from git commit history
+1. install `bfg`
+2. create a file with all the strings you want to remove, i.e `password.txt`
+3. using `bfg --replace-text 'file://password.txt'`
+4. run `git reflog expire --expire=now --all && git gc --prune=now --aggressiv`
+5. get new version of the repo `git clone -mirror <github-repo.git>

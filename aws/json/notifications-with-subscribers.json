@@ -8,7 +8,7 @@
         },
         "Subscribers": [
             {
-                "Address": "codyle212@gmail.com",
+                "Address": "$MY_EMAIL",
                 "SubscriptionType": "EMAIL"
             }
         ]
@@ -22,7 +22,7 @@
         },
         "Subscribers": [
             {
-                "Address": "codyle212@gmail.com",
+                "Address": "$MY_EMAIL",
                 "SubscriptionType": "EMAIL"
             }
         ]
